@@ -34,7 +34,7 @@ public class scraper {
 //
         scraper sc = new scraper();
         sc.init();
-        String[] flower_names = {"baby", "tana", "hydrangeas", "ping_pong", "calimero", "lisianthus", "rosy"};
+        String[] flower_names = {"baby", "tana", "hydrangeas", "pingpong", "calimero", "lisianthus", "rosy"};
         for (String flower_name: flower_names){
             File theDir = new File(System.getProperty("user.dir")+ "\\images\\" + flower_name);
             if (!theDir.exists()){
@@ -50,7 +50,7 @@ public class scraper {
     }
 
     public void rename(){
-        String[] flower_names = {"baby", "tana", "hydrangeas", "ping_pong", "calimero", "lisianthus", "rosy"};
+        String[] flower_names = {"baby", "tana", "hydrangeas", "pingpong", "calimero", "lisianthus", "rosy"};
         for (String flower_name: flower_names){
             File folder = new File(System.getProperty("user.dir")+ "\\images\\" + flower_name);
             File[] listOfFiles = folder.listFiles();
